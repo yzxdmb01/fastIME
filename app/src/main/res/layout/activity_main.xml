@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.imm.MainActivity">
+
+    <View
+        android:id="@+id/view_center"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="自动竞拍价格:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_center"
+        android:layout_below="@id/tv_desc"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="10000"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tv_price_input"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/view_center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="输入价格:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view_center"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/tv_price_input"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:text="" />
+
+</RelativeLayout>

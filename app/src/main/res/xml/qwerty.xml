@@ -1,0 +1,62 @@
+<!-- 参考http://www.cnblogs.com/palance/p/5120048.html -->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1dp"
+    android:keyHeight="60dp"
+    android:keyWidth="33.33333%p"
+    android:verticalGap="1dp">
+    <!--<Row>
+        <Key
+            android:codes="10000"
+            android:keyLabel="10000" />
+        <Key
+            android:codes="20000"
+            android:keyLabel="20000" />
+        <Key
+            android:codes="30000"
+            android:keyLabel="30000" />
+    </Row>-->
+    <Row>
+        <Key
+            android:codes="1"
+            android:keyLabel="1" />
+        <Key
+            android:codes="2"
+            android:keyLabel="2" />
+        <Key
+            android:codes="3"
+            android:keyLabel="3" />
+    </Row>
+    <Row android:layout_centerHorizontal="true">
+        <Key
+            android:codes="4"
+            android:keyLabel="4" />
+        <Key
+            android:codes="5"
+            android:keyLabel="5" />
+        <Key
+            android:codes="6"
+            android:keyLabel="6" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="7"
+            android:keyLabel="7" />
+        <Key
+            android:codes="8"
+            android:keyLabel="8" />
+        <Key
+            android:codes="9"
+            android:keyLabel="9" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key
+            android:codes="-5"
+            android:keyLabel="删除" />
+        <Key
+            android:codes="0"
+            android:keyLabel="0" />
+        <Key
+            android:codes="-4"
+            android:keyLabel="完成" />
+    </Row>
+</Keyboard>
